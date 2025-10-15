@@ -1,24 +1,143 @@
-# Compiled class file
+# ===================================
+# .gitignore para Repositorio de Módulos Java/Eclipse
+# Combinado: Template GitHub + Configuración Eclipse
+# ===================================
+
+# ===================================
+# Archivos compilados de Java
+# ===================================
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
+*.nar
+
+# ===================================
+# Archivos de log
+# ===================================
+*.log
+
+# ===================================
+# BlueJ (IDE educativo)
+# ===================================
+*.ctxt
+
+# ===================================
+# Mobile Tools for Java (J2ME)
+# ===================================
+.mtj.tmp/
+
+# ===================================
+# Archivos comprimidos
+# ===================================
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# ===================================
+# JVM crash logs
+# ===================================
 hs_err_pid*
 replay_pid*
+
+# ===================================
+# Directorios de compilación
+# ===================================
+bin/
+build/
+target/
+out/
+dist/
+
+# ===================================
+# Eclipse
+# ===================================
+
+# Configuraciones locales (se regeneran al importar)
+.metadata/
+.recommenders/
+.settings/
+
+# Archivos temporales de Eclipse
+*.swp
+*.swo
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+# Configuraciones de lanzamiento locales (opcional ignorar)
+*.launch
+
+# ===================================
+# IntelliJ IDEA (por si alguien lo usa)
+# ===================================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ===================================
+# NetBeans (por si alguien lo usa)
+# ===================================
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ===================================
+# Sistema operativo
+# ===================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ===================================
+# Otros archivos temporales
+# ===================================
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# ===================================
+# Maven (si usás Maven en algún módulo)
+# ===================================
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
+
+# ===================================
+# Gradle (si usás Gradle en algún módulo)
+# ===================================
+.gradle/
+gradle-app.setting
+
+# ===================================
+# Archivos de PDFs (DESCOMENTA SI NO QUERÉS SUBIRLOS)
+# ===================================
+# *.pdf
+
+# ===================================
+# NOTA IMPORTANTE
+# ===================================
+# Este .gitignore MANTIENE los archivos esenciales de Eclipse:
+# - .project (configuración del proyecto)
+# - .classpath (configuración del classpath)
+# - src/ (código fuente)
+# 
+# Estos archivos son necesarios para importar los proyectos correctamente.
