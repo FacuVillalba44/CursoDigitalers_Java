@@ -132,9 +132,28 @@ public class App {
 		System.out.println("Semanas: " + semanas);
 		System.out.println("Dias: " + dias);
 		System.out.println("Horas: " + horas);
+		System.out.println("---------------------------\n");
 		
-	
-		
+	/*Ejercicio 6: resoluciòn de enunciados desarrollando el código
+	  mostrar en pantalla: n1+n2
+	  					   n3-n1
+	  					   n1*n3
+	  					   n3/n2
+	 */
+		int n1=5, n2=10, n3=20;
+		System.out.println("n1="+n1+" n2="+n2+" n3="+n3);
+		System.out.println("\nn1+n2= "+(n1+n2));
+		System.out.println("n3-n1= "+(n3-n1));
+		System.out.println("n1*n3= "+(n1*n3));
+		System.out.println("n3/n2= "+(n3/n2));
+		System.out.println("---------------------------\n");
+	/*Ejercicio : mostrar en pantalla: total, promedio y resto entre num2 y num1*/
+		int num1=10, num2=20, num3=30;
+		System.out.println("n1="+num1+" n2="+num2+" n3="+num3);
+		System.out.println("\nTotal: "+(num1+num2+num3));
+		System.out.println("Promedio: "+((num1+num2+num3)/3));
+		System.out.println("Resto entre n2 y n1: "+(num2%num1));
+			
 	}
 
 }
