@@ -54,8 +54,51 @@ public class App {
 		 * lleva la palabra "final" al inicio
 		 * Se debe asignar en la misma linea 
 		 */
+		/*Operadores aritmeticos:
+		 son operadores binarios
+		 Operandos: numéricos
+		 resultado: nummérico
+		 +:suma
+		 -:resta
+		 *: multiplicacion
+		 /:división
+		 %:módulo o resto de la división		 
+		  */
+		/*Operador Concatenación
+		  para ver en una salida la combinacion de un string con un numero
+		  se hace con el operador '+'
+		  ej: System.out.println("hola"+4)
+		  */
+		/*Presedencia de operadores y uso de parentesis
+		 * java tiene una tabla de valor de prioridad para los operadores aritméticos
+		 * al usar parentesis podemos alterar el orden de ejecución de las operaciones
+		 * */
+		/*Operaciones de asignación
+		 +=,  -=, *=, /=
+		 ejemplo: byte a = 10;
+		 		  a += 5;// a = a + 5 -> 15(la salida de esa linea es 15)
+		 asigna al contenido de la variable el valor asignado que está a la derecha
+		 */
+		/*Operadores de incremento y decremento:
+		 son operadores unarios
+		  ++(esto es igual a hacer '+1') incrementa la variable en una unidad
+		  --(esto es igual a hacer '-1') decrementa la variable en una unidad
+		  */
+		/*Operadores Relacionales:
+		 <:menor 
+		 >:mayor 
+		 <=:menor o igual
+		 >=:mayor o igual
+		 ==: igual
+		 !=:distinto
+		 Operandos: son de tipo numerico
+		 ej: num1<num2 (se lee como: num1 es menor que num2)
+		 Resultado: es de tipo boolean
+		 */
 		
 		System.out.println("hola");
+		System.out.println();
+	
 		
 	}
 
