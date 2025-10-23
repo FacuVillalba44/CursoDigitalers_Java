@@ -44,7 +44,7 @@ public class App {
 	  		el contenido asignado a entre comillas dobles
 	  		ej: String txt = "hola mundo"		 
 		 */
-		/*Tipo de datos Logicos:
+		/*Tipo de datos Booleano:
 		 	boolean: solo almacena "true" o "false"		  
 		  */
 		
@@ -95,9 +95,44 @@ public class App {
 		 ej: num1<num2 (se lee como: num1 es menor que num2)
 		 Resultado: es de tipo boolean
 		 */
+		/*Operadores lógicos:
+		  &: AND (ambos operandos son verdaderos)
+		  |: OR  (al menos uno de los operandos es verdadero)
+		  ^: XOR (solo uno de los operandos es verdadero)
+		  !: NOT (Niega el contenido del operando con el que trabaja)
+		  operandos: tipo boolean
+		  resultado tipo boolean
+		  */ 
+		//LABORATORIO ADICIONAL
+		/* Consigna: crear un programa que dado un número entero de horas muestre en la
+		 * salida de consola el equivalente en semanas, dias y horas
+		*/
+		//datos auxiliares para facilitar las operaciones
+		int horasTotales = 1500;
+		int horasPorDia = 24;
+		int diasPorSemana = 7;
+		//cantidad de horas en la semana
+		int horasPorSemana= horasPorDia * diasPorSemana;
 		
-		System.out.println("hola");
-		System.out.println();
+		//Calcular semanas completas
+		int semanas = horasTotales / horasPorSemana;
+		
+		//Calcular horas restantes por semana;
+		int horasRestantes = horasTotales % horasPorSemana;
+		
+		//Calcular días restantes del resto
+		int dias = horasRestantes / horasPorDia;
+		
+		//Calcular horas restantes
+		int horas = horasRestantes % horasPorDia;
+				
+		
+		
+		System.out.println("Horas totales: " + horasTotales);
+		System.out.println("Semanas: " + semanas);
+		System.out.println("Dias: " + dias);
+		System.out.println("Horas: " + horas);
+		
 	
 		
 	}
