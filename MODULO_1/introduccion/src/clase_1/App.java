@@ -25,12 +25,135 @@ public class App {
 		
 		/*Tipo de datos Reales:
 		 		  |Cant. de memoria
-		  ->float: ( 4 bytes )
-		  ->double:( 8 bytes )		 
+		  ->float: ( 4 bytes )/presición de 8 dígitos
+		  ->double:( 8 bytes )/presición de 16 digitos
+		  ej: float numReal;
+		  	  numReal=12.34567890f;<- para que lo reconozca como float agregar "f" si tiene punto
+		  	 double numReal2;
+		  	 numReal2=12.3456789;
 		*/
+		/*Tipos de dato para caracteres
+		  	char (cada caracter tiene un número asociado)
+		  	el contenido asignado a entre comillas simples
+		  	admite de a UN caracter
+		  	ej: char letra = 'h';
+		  	se pueden asignar numeros y en pantalla se vera el caracter asociado		 
+		 * */
+		/*Clase de dato String: cadena de caracteres
+	  		String (admite grupos de caracteres)
+	  		el contenido asignado a entre comillas dobles
+	  		ej: String txt = "hola mundo"		 
+		 */
+		/*Tipo de datos Booleano:
+		 	boolean: solo almacena "true" o "false"		  
+		  */
 		
-		System.out.println("hola");
+		/*Declaración de constantes:
+		 * final tipo identificador = valor;
+		 ej: final float PI = 3.14f;
+		 * lleva la palabra "final" al inicio
+		 * Se debe asignar en la misma linea 
+		 */
+		/*Operadores aritmeticos:
+		 son operadores binarios
+		 Operandos: numéricos
+		 resultado: nummérico
+		 +:suma
+		 -:resta
+		 *: multiplicacion
+		 /:división
+		 %:módulo o resto de la división		 
+		  */
+		/*Operador Concatenación
+		  para ver en una salida la combinacion de un string con un numero
+		  se hace con el operador '+'
+		  ej: System.out.println("hola"+4)
+		  */
+		/*Presedencia de operadores y uso de parentesis
+		 * java tiene una tabla de valor de prioridad para los operadores aritméticos
+		 * al usar parentesis podemos alterar el orden de ejecución de las operaciones
+		 * */
+		/*Operaciones de asignación
+		 +=,  -=, *=, /=
+		 ejemplo: byte a = 10;
+		 		  a += 5;// a = a + 5 -> 15(la salida de esa linea es 15)
+		 asigna al contenido de la variable el valor asignado que está a la derecha
+		 */
+		/*Operadores de incremento y decremento:
+		 son operadores unarios
+		  ++(esto es igual a hacer '+1') incrementa la variable en una unidad
+		  --(esto es igual a hacer '-1') decrementa la variable en una unidad
+		  */
+		/*Operadores Relacionales:
+		 <:menor 
+		 >:mayor 
+		 <=:menor o igual
+		 >=:mayor o igual
+		 ==: igual
+		 !=:distinto
+		 Operandos: son de tipo numerico
+		 ej: num1<num2 (se lee como: num1 es menor que num2)
+		 Resultado: es de tipo boolean
+		 */
+		/*Operadores lógicos:
+		  &: AND (ambos operandos son verdaderos)
+		  |: OR  (al menos uno de los operandos es verdadero)
+		  ^: XOR (solo uno de los operandos es verdadero)
+		  !: NOT (Niega el contenido del operando con el que trabaja)
+		  operandos: tipo boolean
+		  resultado tipo boolean
+		  */ 
+		//LABORATORIO ADICIONAL
+		/* Consigna: crear un programa que dado un número entero de horas muestre en la
+		 * salida de consola el equivalente en semanas, dias y horas
+		*/
+		//datos auxiliares para facilitar las operaciones
+		int horasTotales = 1500;
+		int horasPorDia = 24;
+		int diasPorSemana = 7;
+		//cantidad de horas en la semana
+		int horasPorSemana= horasPorDia * diasPorSemana;
 		
+		//Calcular semanas completas
+		int semanas = horasTotales / horasPorSemana;
+		
+		//Calcular horas restantes por semana;
+		int horasRestantes = horasTotales % horasPorSemana;
+		
+		//Calcular días restantes del resto
+		int dias = horasRestantes / horasPorDia;
+		
+		//Calcular horas restantes
+		int horas = horasRestantes % horasPorDia;
+				
+		
+		
+		System.out.println("Horas totales: " + horasTotales);
+		System.out.println("Semanas: " + semanas);
+		System.out.println("Dias: " + dias);
+		System.out.println("Horas: " + horas);
+		System.out.println("---------------------------\n");
+		
+	/*Ejercicio 6: resoluciòn de enunciados desarrollando el código
+	  mostrar en pantalla: n1+n2
+	  					   n3-n1
+	  					   n1*n3
+	  					   n3/n2
+	 */
+		int n1=5, n2=10, n3=20;
+		System.out.println("n1="+n1+" n2="+n2+" n3="+n3);
+		System.out.println("\nn1+n2= "+(n1+n2));
+		System.out.println("n3-n1= "+(n3-n1));
+		System.out.println("n1*n3= "+(n1*n3));
+		System.out.println("n3/n2= "+(n3/n2));
+		System.out.println("---------------------------\n");
+	/*Ejercicio : mostrar en pantalla: total, promedio y resto entre num2 y num1*/
+		int num1=10, num2=20, num3=30;
+		System.out.println("n1="+num1+" n2="+num2+" n3="+num3);
+		System.out.println("\nTotal: "+(num1+num2+num3));
+		System.out.println("Promedio: "+((num1+num2+num3)/3));
+		System.out.println("Resto entre n2 y n1: "+(num2%num1));
+			
 	}
 
 }
