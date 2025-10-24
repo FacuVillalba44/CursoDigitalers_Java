@@ -5,7 +5,7 @@ public class app {
 	public static void main(String[] args) {
 		//LABORATORIO 1
 		//Crea  objeto Scanner para leer datos desde la consola
-		Scanner ingreso = new Scanner(System.in);
+		/*Scanner ingreso = new Scanner(System.in);
 		
 		System.out.println("________Laboratorio 1________");
 		
@@ -45,8 +45,51 @@ public class app {
 		System.out.printf("División: %.20f%n" , divisionDouble);
 		
 		//Cierre del scanner
-		ingreso.close();
+		ingreso.close();*/
 	
+		//LABORATORIO 2 DEL MODULO
+		Scanner texto = new Scanner(System.in);
+		System.out.println("________Laboratorio 1________");
+	
+		System.out.println("Ingrese un parrafo: ");
+		String parrafo1=texto.nextLine();
+	
+		System.out.println("\nIngrese otro parrafo: ");
+		String parrafo2=texto.nextLine();
+		
+		//1. Comparar con el operador relacional ==
+		boolean igualesBitABit = (parrafo1 == parrafo2);
+		System.out.println("\n1. ¿Son iguales bit a bit?: "+igualesBitABit);
+		
+		//2. Comparación de contenido
+		boolean mismoContenido = parrafo1.equalsIgnoreCase(parrafo2);
+		System.out.println("2. ¿Son iguales en contenido?: " + mismoContenido);
+		
+		//3. Mostrar contenido en mayúsculas
+		System.out.println("\n3. Parrafos en MAYÚSCULAS");
+		System.out.println("	Parrafo 1:" + parrafo1.toUpperCase());
+		System.out.println("	Parrafo 2:" + parrafo2.toUpperCase());
+		
+		//4. Mostrar contenido en minúscula
+		System.out.println("\n4. Parrafos en minúsculas");
+		System.out.println("	Parrafo 1:" + parrafo1.toLowerCase());
+		System.out.println("	Parrafo 2:" + parrafo2.toLowerCase());
+		
+		//5. Mostrar primer letra en mayúsculas
+		String capitalizado1 = parrafo1.substring(0, 1).toUpperCase() + parrafo1.substring(1);
+		String capitalizado2 = parrafo2.substring(0, 1).toUpperCase() + parrafo2.substring(1);
+		System.out.println("\n5. Primer letra en mayúscula");
+		System.out.println("	Parrafo 1:" + capitalizado1);
+		System.out.println("	Parrafo 2:" + capitalizado2);
+		
+		//6. Parrafos unidos con una coma
+		String union = parrafo1 + ", " + parrafo2;
+		System.out.println("\n6. Párrafos unidos con coma: ");
+		System.out.println("   "+union);
+		texto.close();
+		texto.close();
+		
+		
 	}
 
 }
